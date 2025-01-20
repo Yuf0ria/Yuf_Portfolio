@@ -1,0 +1,25 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+}
+.section1, .section2 {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.section2 {
+    background: rgb(68, 35, 19);
+}
+.text {
+    top: 30%;
+    left: 50%;
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15vw;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+    5px 5px 70px rgba(225, 225, 225, 0.5);
+    transform: scale(1,1.1) translate(-50%, 10%);
+}
