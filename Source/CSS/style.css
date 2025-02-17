@@ -63,6 +63,7 @@ main{
 .Parallax{
     pointer-events: none;
     transform: translate(-50%, -50%);
+    transition: 0.45s cubic-bezier(0.050, 0.42, 0.32, .99);
 }
 
 
@@ -99,9 +100,15 @@ main{
     line-height: 0.88;
 }
 
+.text h3{
+    font-weight: 100;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
 .body-2{
     position: absolute;
-    width: 1750px;
+    width: 1900px;
     top: calc(50% - 15px);
     left: calc(50% + 100px);
     z-index: 3;
@@ -109,9 +116,9 @@ main{
 
 .Flower{
     position: absolute;
-    width: 2000px;
-    top: calc(50% - 0px);
-    left: calc(50% + 0px);
+    width: 2200px;
+    top: calc(50% + 0px);
+    left: calc(50% + 50px);
     z-index: 4;
 }
 
