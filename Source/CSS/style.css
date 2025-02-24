@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+/*default page settings done*/
 *, *::before, *::after{
     padding: 0;
     margin: 0;
@@ -9,16 +8,16 @@
 body{
     font-family: "Poppins", sans-serif;
     background-color: #333;
+    overflow-x: hidden;
 }
-
+/*decorative highlight of text*/
 ::selection{
     background-color: #be663e79;
 }
-
+/*simple navigation done*/
 .logo{
     width: 100px;
 }
-
 header {
     position: absolute;
     z-index: 9999;
@@ -28,7 +27,6 @@ header {
     left: 0;
     border-bottom: 1px solid rgba(225, 225, 225, 0.1);
 }
-
 header nav{
     max-width: 1400px;
     margin: 0 auto;
@@ -37,13 +35,11 @@ header nav{
     justify-content: space-between;
     align-items: center;
 }
-
 header ul{
     display: flex;
     list-style: none;
     align-items: center;
 }
-
 header ul a{
     text-decoration: none;
     color: #fff;
@@ -53,181 +49,4 @@ header ul a{
     font-size: 0.83rem;
 }
 
-main{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-}
 
-.Parallax{
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: 0.45s cubic-bezier(0.050, 0.42, 0.32, .99);
-}
-
-
-/*positioning layers & text*/
-.bg-img{
-    position: absolute;
-    width: 2900px;
-    top: calc(50% - 320px);
-    left: calc(50% + 10px);
-    z-index: 1;
-}
-
-.text{
-    position: absolute;
-    z-index: 2;
-    top: calc(30% + 0px);
-    left: calc(30% - 80px);
-    text-align: center;
-    text-transform: uppercase;
-    pointer-events: auto;
-    color: #fff;
-    transform: translate(-30%, -30%);
-}
-
-.text h2{
-    font-weight: 100;
-    font-size: 6.5rem;
-    line-height: 0.88;
-}
-
-.text h1{
-    font-weight: 800;
-    font-size: 8rem;
-    line-height: 0.88;
-}
-
-.text h3{
-    font-weight: 100;
-    font-size: 1.6rem;
-    line-height: 2;
-}
-
-.body-2{
-    position: absolute;
-    width: 1900px;
-    top: calc(50% - 15px);
-    left: calc(50% + 100px);
-    z-index: 3;
-}
-
-.Flower{
-    position: absolute;
-    width: 2200px;
-    top: calc(50% + 0px);
-    left: calc(50% + 50px);
-    z-index: 4;
-}
-
-.vignette{
-    position: absolute;
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 65%, rgba(0,0,0,0.7));
-    pointer-events: none;
-}
-
-
-@media (max-width: 1100px) {
-    .text h1{
-        font-size: 5.8rem;
-    }
-
-    .text h2{
-        font-size: 4.7rem;
-    }
-
-    .text h3{
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 725px) {
-    .text h1{
-        font-size: 5rem;
-        line-height: 1.1;
-    }
-
-    .text h2{
-        font-size: 4.1rem;
-        line-height: 1.1;
-    }
-
-    .text h3{
-        font-size: 0.6rem;
-    }
-
-    header nav{
-        padding: 0 1rem;
-    }
-    .logo{
-        width: 75px;
-    }
-    header ul a {
-        font-size: 0.73rem;
-        padding: 0 0.9rem;
-    }
-
-    .bg-img{
-        width: initial;
-        height: 211.104%;
-    }
-
-    .body-2{
-        width: initial;
-        height: 111.2%;
-    }
-
-    .Flower{
-        width: initial;
-        height: 111.2%;
-    }
-    
-    .text{
-        top: calc(50% - 0px);
-        left: calc(50% + 0px);
-        transform: translate(-50%, -50%);
-        z-index: 4;
-    }
-}
-
-@media (max-width: 520px) {
-    .text h1{
-        font-size: 3rem;
-    }
-
-    .text h2{
-        font-size: 2.2rem;
-    }
-
-    .text h3{
-        font-size: 0.4rem;
-    }
-}
-
-@media (max-width: 420px) {
-    .text h1{
-        font-size: 2rem;
-    }
-
-    .text h2{
-        font-size: .8rem;
-    }
-
-    .text h3{
-        font-size: 0.2rem;
-    }
-
-    .text{
-        top: calc(50% - 100px);
-        left: calc(50% + 0px);
-        transform: translate(-50%, -50%);
-        z-index: 4;
-    }
-}
