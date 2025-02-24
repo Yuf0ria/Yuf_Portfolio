@@ -20,7 +20,7 @@
 .box-2{
     grid-row: span 2;
     grid-column: span 2; 
-    /*extends the box to the remaining grid cells, yt-2:49*, review notes/
+    /*extends the box to the remaining grid cells, yt-2:49*, review notes*/
 }
 
 .box{
