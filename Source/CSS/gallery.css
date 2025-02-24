@@ -1,8 +1,9 @@
 /*Divider below the parallax*/
 .gallery{
     display: grid;
-    grid-template-rows: 100px 100px 100px;
-    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    border: 10px solid #fff; 
 
     /*--same function as main--*/
     position: relative;
@@ -13,15 +14,17 @@
 /*box testing inside gallery*/
 
 .box-1{
-    grid-row-start: ;
-    grid-row-end: ;
-    grid-column-start: ;
-    grid-column-end: ;
+    grid-row: 1 / 3;
+    grid-column: 1 / 5;
+}
+.box-2{
+    grid-row: span 2;
+    grid-column: span 2; 
+    /*extends the box to the remaining grid cells, yt-2:49*, review notes/
 }
 
 .box{
-    height: 200px;
-    width: 200px;
     background-color: aqua;
+    border: 5px solid red; 
     font-size: 38px;
 }
