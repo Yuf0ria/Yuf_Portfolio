@@ -1,0 +1,103 @@
+/*Modifies css for smaller screens, especially parallax, pretty tedious so it's not perfect*/
+
+@media (max-width: 1100px) {
+    .text h1{
+        font-size: 5.8rem;
+    }
+    .text h2{
+        font-size: 4.7rem;
+    }
+    .text h3{
+        font-size: 2rem;
+    }
+    
+    .box{
+        flex-grow: 1;
+    } */
+    .text{
+        z-index: 10;
+    }
+}
+
+@media (max-width: 784px) {
+    .text h1{
+        font-size: 3.6rem;
+        line-height: 1.1;
+    }
+
+    .text h2{
+        font-size: 2.8rem;
+        line-height: 1.1;
+    }
+
+    .text h3{
+        font-size: 1rem;
+    }
+
+    header nav{
+        padding: 0 1rem;
+    }
+    .logo{
+        width: 75px;
+    }
+    header ul a {
+        font-size: 0.73rem;
+        padding: 0 0.9rem;
+    }
+
+    .bg-img{
+        width: initial;
+        height: 211.104%;
+    }
+
+    .body-2{
+        width: initial;
+        height: 111.2%;
+    }
+
+    .Flower{
+        width: initial;
+        height: 111.2%;
+    }
+    
+    .text{
+        top: calc(50% - 0px);
+        left: calc(50% + 0px);
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 520px) {
+    .text h1{
+        font-size: 3rem;
+    }
+
+    .text h2{
+        font-size: 2.2rem;
+    }
+
+    .text h3{
+        font-size: 0.4rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .text h1{
+        font-size: 2rem;
+    }
+
+    .text h2{
+        font-size: .8rem;
+    }
+
+    .text h3{
+        font-size: 0.2rem;
+    }
+
+    .text{
+        top: calc(50% - 100px);
+        left: calc(50% + 0px);
+        transform: translate(-50%, -50%);
+        z-index: 4;
+    }
+}

@@ -1,0 +1,70 @@
+/*contains parallax customization*/
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.Parallax{
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0.45s cubic-bezier(0.050, 0.42, 0.32, .99);
+}
+/*still part of main --> positioning layers & text*/
+.bg-img{
+    position: absolute;
+    width: 2900px;
+    top: calc(50% - 320px);
+    left: calc(50% + 10px);
+    z-index: 1;
+}
+.text{
+    position: absolute;
+    z-index: 2;
+    top: calc(30% + 0px);
+    left: calc(30% - 80px);
+    text-align: center;
+    text-transform: uppercase;
+    pointer-events: auto;
+    color: #fff;
+    transform: translate(-30%, -30%);
+}
+.text h2{
+    font-weight: 100;
+    font-size: 6.5rem;
+    line-height: 0.88;
+}
+.text h1{
+    font-weight: 800;
+    font-size: 8rem;
+    line-height: 0.88;
+}
+.text h3{
+    font-weight: 100;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.body-2{
+    position: absolute;
+    width: 1900px;
+    top: calc(50% - 15px);
+    left: calc(50% + 100px);
+    z-index: 3;
+}
+.Flower{
+    position: absolute;
+    width: 2200px;
+    top: calc(50% + 0px);
+    left: calc(50% + 50px);
+    z-index: 4;
+}
+.vignette{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 65%, rgba(0,0,0,0.7));
+    pointer-events: none;
+}
